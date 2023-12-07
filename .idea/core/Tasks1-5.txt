@@ -1,0 +1,28 @@
+cat > animals1
+horses
+camels
+donkeys
+ctrl+D
+
+cat > animals2
+Cats
+Dogs
+Snakes
+ctrl+D
+
+cat animals1 animals2 > animals3
+cat animals3
+mv animals3 HumanFriends
+mkdir papka
+mv HumanFriends papka/
+
+wget https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
+sudo dpkg -i mysql-apt-config_0.8.24-1_all.deb
+sudo apt update
+sudo apt install mysql-server
+
+wget https://downloads.mysql.com/archives/get/p/41/file/mysql-router_8.0.31-1ubuntu22.04_amd64.deb
+sudo apt -f install
+sudo dpkg -i mysql-router_8.0.31-1ubuntu22.04_amd64.deb
+sudo dpkg -r mysql-router
+
